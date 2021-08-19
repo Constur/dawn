@@ -81,9 +81,15 @@
       "type": "product-recommendations",
       "settings": {
       }
+    },
+    "smarketly_sections": {
+      "type": "smk_product_blocks",
+      "settings": {
+      }
     }
   },
   "order": [
+    "smarketly_sections",
     "smarketly_sections_above",
     "main",
     "smarketly_sections_below",

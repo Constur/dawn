@@ -1,13 +1,23 @@
 {
   "sections": {
     "banner": {
-      "type": "main-collection-banner"
+      "type": "main-collection-banner",
+      "settings": {
+      }
     },
     "product-grid": {
-      "type": "main-collection-product-grid"
+      "type": "main-collection-product-grid",
+      "settings": {
+      }
+    },
+    "smarketly_sections": {
+      "type": "smk_collection_blocks",
+      "settings": {
+      }
     }
   },
   "order": [
+    "smarketly_sections",
     "banner",
     "product-grid"
   ]

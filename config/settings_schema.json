@@ -4,8 +4,8 @@
     "theme_name": "Dawn",
     "theme_version": "1.1.0",
     "theme_author": "Shopify",
-    "theme_documentation_url": "https://shopify.dev/themes/tools/dawn",
-    "theme_support_url": "https://support.shopify.com/"
+    "theme_documentation_url": "https:\/\/shopify.dev\/themes\/tools\/dawn",
+    "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
     "name": "t:settings_schema.colors.name",
@@ -277,6 +277,1365 @@
         "id": "currency_code_enabled",
         "label": "t:settings_schema.currency_format.settings.currency_code_enabled.label",
         "default": true
+      }
+    ]
+  },
+  {
+    "name": "Smarketly Lead Capture",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Main Settings"
+      },
+      {
+        "type": "checkbox",
+        "id": "slc_enable_lead_capture_popup",
+        "label": "Enable lead capture popup",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "slc_preview_lead_capture_popup",
+        "label": "Preview lead capture popup",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "slc_preview_success_step",
+        "label": "Preview success step",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "slc_show_templates",
+        "label": "Show Lead Capture templates to choose and apply",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "General styles"
+      },
+      {
+        "type": "select",
+        "id": "slc_layout",
+        "label": "Popup layout",
+        "options": [
+          {
+            "value": "regular",
+            "label": "Regular popup"
+          },
+          {
+            "value": "fullscreen",
+            "label": "Fullscreen popup"
+          },
+          {
+            "value": "sticky",
+            "label": "Sticky bar on top"
+          },
+          {
+            "value": "footer",
+            "label": "Sticky footer"
+          }
+        ],
+        "default": "regular"
+      },
+      {
+        "type": "range",
+        "id": "slc_regular_max_width",
+        "min": 0,
+        "max": 1200,
+        "step": 20,
+        "unit": "px",
+        "label": "Regular popup maximum width",
+        "default": 800,
+        "info": "Set 0 to fill the screen. Limits inside content for fullscreen popup."
+      },
+      {
+        "type": "range",
+        "id": "slc_inside_padding",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Inside padding",
+        "default": 20
+      },
+      {
+        "type": "range",
+        "id": "slc_inside_padding_m",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Inside padding mobile",
+        "default": 20
+      },
+      {
+        "type": "range",
+        "id": "slc_rounded_corners",
+        "min": 0,
+        "max": 20,
+        "step": 1,
+        "unit": "px",
+        "label": "Rounded corners",
+        "default": 10
+      },
+      {
+        "type": "header",
+        "content": "Border styles"
+      },
+      {
+        "type": "range",
+        "id": "slc_border_size",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "unit": "px",
+        "label": "Border size desktop",
+        "default": 2
+      },
+      {
+        "type": "range",
+        "id": "slc_border_size_mobile",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "unit": "px",
+        "label": "Border size mobile",
+        "default": 2
+      },
+      {
+        "type": "select",
+        "id": "slc_border_style",
+        "label": "Border style",
+        "options": [
+          {
+            "value": "solid",
+            "label": "Solid"
+          },
+          {
+            "value": "dashed",
+            "label": "Dashed"
+          },
+          {
+            "value": "dotted",
+            "label": "Dotted"
+          },
+          {
+            "value": "double",
+            "label": "Double"
+          },
+          {
+            "value": "groove",
+            "label": "Groove"
+          },
+          {
+            "value": "ridge",
+            "label": "Ridge"
+          },
+          {
+            "value": "inset",
+            "label": "Inset"
+          },
+          {
+            "value": "outset",
+            "label": "Outset"
+          }
+        ],
+        "default": "solid"
+      },
+      {
+        "type": "color",
+        "id": "slc_border_color",
+        "label": "Border color",
+        "default": "#DADADA"
+      },
+      {
+        "type": "header",
+        "content": "Background settings"
+      },
+      {
+        "type": "color",
+        "id": "slc_bg_color",
+        "label": "Background color",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "image_picker",
+        "id": "slc_bg_image",
+        "label": "Background image"
+      },
+      {
+        "type": "header",
+        "content": "Form step settings"
+      },
+      {
+        "type": "image_picker",
+        "id": "slc_form_image",
+        "label": "Image on form step"
+      },
+      {
+        "type": "select",
+        "id": "slc_grid",
+        "label": "Grid for: Image \/ Form",
+        "default": "5.7",
+        "options": [
+          {
+            "value": "6.6",
+            "label": "6 \/ 6"
+          },
+          {
+            "value": "7.5",
+            "label": "7 \/ 5"
+          },
+          {
+            "value": "5.7",
+            "label": "5 \/ 7"
+          },
+          {
+            "value": "8.4",
+            "label": "8 \/ 4"
+          },
+          {
+            "value": "4.8",
+            "label": "4 \/ 8"
+          },
+          {
+            "value": "9.3",
+            "label": "9 \/ 3"
+          },
+          {
+            "value": "3.9",
+            "label": "3 \/ 9"
+          },
+          {
+            "value": "10.2",
+            "label": "10 \/ 2"
+          },
+          {
+            "value": "2.10",
+            "label": "2 \/ 10"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "slc_reverse",
+        "label": "Reverse content",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "slc_reverse_mobile",
+        "label": "Reverse content on mobile",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "slc_img_form_vertical",
+        "label": "Image \/ Form vertical arrangement",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "slc_submit_cancel_one_line",
+        "label": "Submit and cancel buttons in one line",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "slc_field_submit_one_line",
+        "label": "Stack submit button to field",
+        "default": false,
+        "info": "Works best with only one field in lead capture, so button will stick directly to the field"
+      },
+      {
+        "type": "color",
+        "id": "slc_form_bg_color",
+        "label": "Background color"
+      },
+      {
+        "type": "range",
+        "id": "slc_form_padding",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Form padding",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "slc_form_padding_m",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Form padding mobile",
+        "default": 0
+      },
+      {
+        "type": "select",
+        "id": "slc_form_text_align",
+        "label": "Form step text align",
+        "default": "center",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ]
+      },
+      {
+        "type": "textarea",
+        "id": "slc_title",
+        "label": "Title",
+        "default": "Get 10% OFF"
+      },
+      {
+        "type": "textarea",
+        "id": "slc_subtitle",
+        "label": "Subtitle",
+        "default": "Sign up now to get access to exclusive discount"
+      },
+      {
+        "type": "header",
+        "content": "Form settings"
+      },
+      {
+        "type": "checkbox",
+        "id": "slc_show_email",
+        "label": "Show email field",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "slc_show_phone",
+        "label": "Show phone field",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "slc_show_first_name",
+        "label": "Show first name field",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "slc_show_last_name",
+        "label": "Show last name field",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "slc_show_full_name",
+        "label": "Show full name field",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "slc_show_address",
+        "label": "Show address field",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "slc_show_custom",
+        "label": "Show custom field",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "slc_custom_label",
+        "label": "Custom field label",
+        "default": "Message"
+      },
+      {
+        "type": "textarea",
+        "id": "slc_custom_placeholder",
+        "label": "Custom field placeholder",
+        "default": "Leave a message for us!"
+      },
+      {
+        "type": "header",
+        "content": "Form style settings"
+      },
+      {
+        "type": "checkbox",
+        "id": "slc_show_field_labels",
+        "label": "Show field labels",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "scl_field_max_width_limit",
+        "min": 0,
+        "max": 1000,
+        "step": 10,
+        "unit": "px",
+        "label": "Limit field max width limit (0 - no limit)",
+        "default": 350
+      },
+      {
+        "type": "range",
+        "id": "slc_field_height",
+        "min": 10,
+        "max": 110,
+        "step": 1,
+        "unit": "px",
+        "label": "Form field height",
+        "default": 40
+      },
+      {
+        "type": "range",
+        "id": "slc_field_border_radius",
+        "min": 0,
+        "max": 20,
+        "step": 1,
+        "unit": "px",
+        "label": "Input field rounded corners",
+        "default": 10
+      },
+      {
+        "type": "header",
+        "content": "Form color settings"
+      },
+      {
+        "type": "color",
+        "id": "slc_title_color",
+        "label": "Form title text color",
+        "default": "#191919"
+      },
+      {
+        "type": "color",
+        "id": "slc_subtitle_color",
+        "label": "Form subtitle text color",
+        "default": "#191919"
+      },
+      {
+        "type": "color",
+        "id": "slc_field_label_color",
+        "label": "Form field label color",
+        "default": "#191919"
+      },
+      {
+        "type": "color",
+        "id": "slc_field_border_color",
+        "label": "Form field border color",
+        "default": "#CCCCCC"
+      },
+      {
+        "type": "color",
+        "id": "slc_countdown_title_color",
+        "label": "Countdown timer title color",
+        "default": "#191919"
+      },
+      {
+        "type": "color",
+        "id": "slc_countdown_time_color",
+        "label": "Countdown timer color",
+        "default": "#191919"
+      },
+      {
+        "type": "header",
+        "content": "Submit button settings"
+      },
+      {
+        "type": "textarea",
+        "id": "slc_submit_btn_text",
+        "label": "Submit button text",
+        "default": "Subscribe Now!"
+      },
+      {
+        "type": "color",
+        "id": "slc_submit_btn_text_color",
+        "label": "Submit button text color",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "id": "slc_submit_btn_bg_color",
+        "label": "Submit button background color",
+        "default": "#5563c1"
+      },
+      {
+        "type": "color",
+        "id": "slc_submit_btn_text_color_h",
+        "label": "Submit button hover text color",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "id": "slc_submit_btn_bg_color_h",
+        "label": "Submit button hover background color",
+        "default": "#7782d0"
+      },
+      {
+        "type": "range",
+        "id": "slc_button_border_radius",
+        "min": 0,
+        "max": 20,
+        "step": 1,
+        "unit": "px",
+        "label": "Submit button rounded corners",
+        "default": 4
+      },
+      {
+        "type": "header",
+        "content": "Cancel button settings"
+      },
+      {
+        "type": "textarea",
+        "id": "slc_cancel_btn_text",
+        "label": "Cancel button text",
+        "default": "No, thanks"
+      },
+      {
+        "type": "color",
+        "id": "slc_cancel_btn_text_color",
+        "label": "Cancel button text color",
+        "default": "#CCCCCC"
+      },
+      {
+        "type": "color",
+        "id": "slc_cancel_btn_bg_color",
+        "label": "Cancel button background color"
+      },
+      {
+        "type": "color",
+        "id": "slc_cancel_btn_text_color_h",
+        "label": "Cancel button hover text color",
+        "default": "#191919"
+      },
+      {
+        "type": "color",
+        "id": "slc_cancel_btn_bg_color_h",
+        "label": "Cancel button hover background color"
+      },
+      {
+        "type": "range",
+        "id": "slc_cancel_btn_border_radius",
+        "min": 0,
+        "max": 20,
+        "step": 1,
+        "unit": "px",
+        "label": "Cancel button rounded corners",
+        "default": 4
+      },
+      {
+        "type": "header",
+        "content": "Success step settings"
+      },
+      {
+        "type": "image_picker",
+        "id": "slc_success_image",
+        "label": "Image on success step"
+      },
+      {
+        "type": "select",
+        "id": "slc_success_grid",
+        "label": "Grid for: Image \/ Form",
+        "default": "5.7",
+        "options": [
+          {
+            "value": "6.6",
+            "label": "6 \/ 6"
+          },
+          {
+            "value": "7.5",
+            "label": "7 \/ 5"
+          },
+          {
+            "value": "5.7",
+            "label": "5 \/ 7"
+          },
+          {
+            "value": "8.4",
+            "label": "8 \/ 4"
+          },
+          {
+            "value": "4.8",
+            "label": "4 \/ 8"
+          },
+          {
+            "value": "9.3",
+            "label": "9 \/ 3"
+          },
+          {
+            "value": "3.9",
+            "label": "3 \/ 9"
+          },
+          {
+            "value": "10.2",
+            "label": "10 \/ 2"
+          },
+          {
+            "value": "2.10",
+            "label": "2 \/ 10"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "slc_success_reverse",
+        "label": "Reverse content",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "slc_success_reverse_mobile",
+        "label": "Reverse content on mobile",
+        "default": false
+      },
+      {
+        "type": "select",
+        "id": "slc_success_text_align",
+        "label": "Form step text align",
+        "default": "center",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ]
+      },
+      {
+        "type": "textarea",
+        "id": "slc_success_title",
+        "label": "Success step title",
+        "default": "Congratulations!"
+      },
+      {
+        "type": "textarea",
+        "id": "slc_success_subtitle",
+        "label": "Success step subtitle",
+        "default": "You got your 10% OFF. It'll be activated when you checkout with a specific product"
+      },
+      {
+        "type": "header",
+        "content": "Close button settings"
+      },
+      {
+        "type": "checkbox",
+        "id": "slc_show_close_btn",
+        "label": "Show close button",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "slc_close_btn_position",
+        "label": "Close button position",
+        "default": "top_right",
+        "options": [
+          {
+            "value": "top_left",
+            "label": "Top left"
+          },
+          {
+            "value": "top_right",
+            "label": "Top right"
+          },
+          {
+            "value": "bottom_left",
+            "label": "Bottom left"
+          },
+          {
+            "value": "bottom_right",
+            "label": "Bottom right"
+          }
+        ]
+      },
+      {
+        "type": "range",
+        "id": "slc_close_btn_size",
+        "min": 0,
+        "max": 50,
+        "step": 1,
+        "unit": "px",
+        "label": "Close button size",
+        "default": 20
+      },
+      {
+        "type": "color",
+        "id": "slc_close_btn_color",
+        "label": "Close btn color",
+        "default": "#444444"
+      },
+      {
+        "type": "header",
+        "content": "Trigger settings"
+      },
+      {
+        "type": "select",
+        "id": "slc_trigger",
+        "label": "Trigger for the lead capture popup",
+        "options": [
+          {
+            "value": "load",
+            "label": "Show as soon as page loads"
+          },
+          {
+            "value": "time",
+            "label": "Show in X seconds after page loads"
+          },
+          {
+            "value": "scroll",
+            "label": "Show after page is scrolled X pixels"
+          }
+        ],
+        "default": "time"
+      },
+      {
+        "type": "text",
+        "id": "slc_trigger_var",
+        "label": "Trigger X Value",
+        "default": "10",
+        "info": "Used for triggers like \"Show in X seconds after page loads\""
+      },
+      {
+        "type": "checkbox",
+        "id": "slc_dont_show_form_filled",
+        "label": "Don't show popup again after the form has been filled",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "Discount Settings"
+      },
+      {
+        "type": "checkbox",
+        "id": "slc_use_discount_code",
+        "label": "Use discount code",
+        "default": false,
+        "info": "Discount code will be applied automatically when the form is submitted."
+      },
+      {
+        "type": "text",
+        "id": "slc_discount_code",
+        "label": "Discount code",
+        "default": "10_OFF"
+      },
+      {
+        "type": "paragraph",
+        "content": "Make sure that your discount type and value matches with your discount code rule. Percentage value shouldn't exceed 100."
+      },
+      {
+        "type": "select",
+        "id": "slc_discount_type",
+        "label": "Discount type",
+        "options": [
+          {
+            "value": "fixed",
+            "label": "Fixed amount"
+          },
+          {
+            "value": "percentage",
+            "label": "Percentage"
+          }
+        ],
+        "default": "percentage"
+      },
+      {
+        "type": "text",
+        "id": "slc_discount_value",
+        "label": "Discount amount",
+        "default": "10"
+      },
+      {
+        "type": "paragraph",
+        "content": "Prices will be dynamically updated based on the setup. Actual price will replace the compare price when discount is active."
+      },
+      {
+        "type": "header",
+        "content": "Countdown timer"
+      },
+      {
+        "type": "checkbox",
+        "id": "slc_show_countdown",
+        "label": "Show countdown timer",
+        "default": false
+      },
+      {
+        "type": "select",
+        "id": "slc_countdown_position",
+        "label": "Countdown position",
+        "default": "b_btn",
+        "options": [
+          {
+            "value": "b_t",
+            "label": "Before title"
+          },
+          {
+            "value": "b_st",
+            "label": "Before subtitle"
+          },
+          {
+            "value": "b_btn",
+            "label": "Before button"
+          }
+        ]
+      },
+      {
+        "type": "textarea",
+        "id": "slc_countdown_title",
+        "label": "Countdown title",
+        "default": "This deal ends in:",
+        "info": "To remove the title completely, delete text in the box"
+      },
+      {
+        "type": "text",
+        "id": "slc_countdown_time_remaining",
+        "label": "Countdown time remaining",
+        "default": "1d 1h 35m 10s",
+        "info": "Countdown time format should be \"XXd XXh XXm XXs\""
+      },
+      {
+        "type": "select",
+        "id": "slc_countdown_action",
+        "label": "When countdown time runs out",
+        "default": "rct",
+        "options": [
+          {
+            "value": "rct",
+            "label": "Reset the countdown timer"
+          },
+          {
+            "value": "hct",
+            "label": "Hide the countdown timer"
+          },
+          {
+            "value": "rtl",
+            "label": "Redirect to link"
+          }
+        ]
+      },
+      {
+        "type": "url",
+        "id": "slc_countdown_url",
+        "label": "Link to go to"
+      },
+      {
+        "type": "header",
+        "content": "Webhook settings"
+      },
+      {
+        "type": "select",
+        "id": "slc_request_type",
+        "label": "Request type",
+        "options": [
+          {
+            "value": "get",
+            "label": "GET"
+          },
+          {
+            "value": "post",
+            "label": "POST"
+          }
+        ],
+        "default": "post"
+      },
+      {
+        "type": "select",
+        "id": "slc_content_type",
+        "label": "Content type",
+        "options": [
+          {
+            "value": "json",
+            "label": "json"
+          },
+          {
+            "value": "form",
+            "label": "x-www-form-urlencoded"
+          }
+        ],
+        "default": "json"
+      },
+      {
+        "type": "textarea",
+        "id": "slc_webhook_url",
+        "label": "Url to send webhook to"
+      },
+      {
+        "type": "text",
+        "id": "slc_email_var",
+        "label": "Email field identifier",
+        "default": "email"
+      },
+      {
+        "type": "text",
+        "id": "slc_phone_var",
+        "label": "Phone field identifier",
+        "default": "phone"
+      },
+      {
+        "type": "text",
+        "id": "slc_first_name_var",
+        "label": "First name identifier",
+        "default": "first_name"
+      },
+      {
+        "type": "text",
+        "id": "slc_last_name_var",
+        "label": "Last name identifier",
+        "default": "last_name"
+      },
+      {
+        "type": "text",
+        "id": "slc_full_name_var",
+        "label": "Full name identifier",
+        "default": "full_name"
+      },
+      {
+        "type": "text",
+        "id": "slc_address_var",
+        "label": "Address identifier",
+        "default": "address"
+      },
+      {
+        "type": "text",
+        "id": "slc_custom_var",
+        "label": "Custom field identifier",
+        "default": "custom"
+      },
+      {
+        "type": "header",
+        "content": "Desktop texts size"
+      },
+      {
+        "type": "range",
+        "id": "slc_title_fs",
+        "min": 6,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Font size title",
+        "default": 32
+      },
+      {
+        "type": "range",
+        "id": "slc_title_lh",
+        "min": 6,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Line height title",
+        "default": 38
+      },
+      {
+        "type": "range",
+        "id": "slc_title_fw",
+        "min": 300,
+        "max": 900,
+        "step": 100,
+        "label": "Font weight title",
+        "default": 700
+      },
+      {
+        "type": "range",
+        "id": "slc_subtitle_fs",
+        "min": 6,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Font size subtitle",
+        "default": 22
+      },
+      {
+        "type": "range",
+        "id": "slc_subtitle_lh",
+        "min": 6,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Line height subtitle",
+        "default": 33
+      },
+      {
+        "type": "range",
+        "id": "slc_subtitle_fw",
+        "min": 300,
+        "max": 900,
+        "step": 100,
+        "label": "Font weight subtitle",
+        "default": 400
+      },
+      {
+        "type": "range",
+        "id": "slc_field_label_fs",
+        "min": 6,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Font size field label",
+        "default": 14
+      },
+      {
+        "type": "range",
+        "id": "slc_field_label_lh",
+        "min": 6,
+        "max": 101,
+        "step": 1,
+        "unit": "px",
+        "label": "Line height field label",
+        "default": 14
+      },
+      {
+        "type": "range",
+        "id": "slc_field_label_fw",
+        "min": 300,
+        "max": 900,
+        "step": 100,
+        "label": "Font weight field label",
+        "default": 700
+      },
+      {
+        "type": "range",
+        "id": "slc_button_fs",
+        "min": 6,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Font size button",
+        "default": 20
+      },
+      {
+        "type": "range",
+        "id": "slc_button_lh",
+        "min": 6,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Line height button",
+        "default": 51
+      },
+      {
+        "type": "range",
+        "id": "slc_button_fw",
+        "min": 300,
+        "max": 900,
+        "step": 100,
+        "label": "Font weight button",
+        "default": 700
+      },
+      {
+        "type": "range",
+        "id": "slc_cancel_btn_fs",
+        "min": 6,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Font size cancel button",
+        "default": 16
+      },
+      {
+        "type": "range",
+        "id": "slc_cancel_btn_lh",
+        "min": 6,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Line height cancel button",
+        "default": 22
+      },
+      {
+        "type": "range",
+        "id": "slc_cancel_btn_fw",
+        "min": 300,
+        "max": 900,
+        "step": 100,
+        "label": "Font weight cancel button",
+        "default": 400
+      },
+      {
+        "type": "range",
+        "id": "slc_countdown_title_fs",
+        "min": 6,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Font size countdown timer title",
+        "default": 16
+      },
+      {
+        "type": "range",
+        "id": "slc_countdown_title_lh",
+        "min": 6,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Line height countdown timer title",
+        "default": 22
+      },
+      {
+        "type": "range",
+        "id": "slc_countdown_title_fw",
+        "min": 300,
+        "max": 900,
+        "step": 100,
+        "label": "Font weight countdown timer title",
+        "default": 400
+      },
+      {
+        "type": "range",
+        "id": "slc_countdown_time_fs",
+        "min": 6,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Font size countdown timer",
+        "default": 22
+      },
+      {
+        "type": "range",
+        "id": "slc_countdown_time_lh",
+        "min": 6,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Line height countdown timer",
+        "default": 28
+      },
+      {
+        "type": "range",
+        "id": "slc_countdown_time_fw",
+        "min": 300,
+        "max": 900,
+        "step": 100,
+        "label": "Font weight countdown timer",
+        "default": 600
+      },
+      {
+        "type": "header",
+        "content": "Mobile texts size"
+      },
+      {
+        "type": "range",
+        "id": "slc_title_fs_m",
+        "min": 14,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Font size title mobile",
+        "default": 32
+      },
+      {
+        "type": "range",
+        "id": "slc_title_lh_m",
+        "min": 14,
+        "max": 101,
+        "step": 1,
+        "unit": "px",
+        "label": "Line height title mobile",
+        "default": 51
+      },
+      {
+        "type": "range",
+        "id": "slc_title_fw_m",
+        "min": 300,
+        "max": 900,
+        "step": 100,
+        "label": "Font weight title",
+        "default": 700
+      },
+      {
+        "type": "range",
+        "id": "slc_subtitle_fs_m",
+        "min": 14,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Font size subtitle",
+        "default": 32
+      },
+      {
+        "type": "range",
+        "id": "slc_subtitle_lh_m",
+        "min": 14,
+        "max": 101,
+        "step": 1,
+        "unit": "px",
+        "label": "Line height subtitle",
+        "default": 51
+      },
+      {
+        "type": "range",
+        "id": "slc_subtitle_fw_m",
+        "min": 300,
+        "max": 900,
+        "step": 100,
+        "label": "Font weight subtitle",
+        "default": 700
+      },
+      {
+        "type": "range",
+        "id": "slc_field_label_fs_m",
+        "min": 14,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Font size field label",
+        "default": 32
+      },
+      {
+        "type": "range",
+        "id": "slc_field_label_lh_m",
+        "min": 14,
+        "max": 101,
+        "step": 1,
+        "unit": "px",
+        "label": "Line height field label",
+        "default": 51
+      },
+      {
+        "type": "range",
+        "id": "slc_field_label_fw_m",
+        "min": 300,
+        "max": 900,
+        "step": 100,
+        "label": "Font weight field label",
+        "default": 700
+      },
+      {
+        "type": "range",
+        "id": "slc_button_fs_m",
+        "min": 14,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Font size button",
+        "default": 32
+      },
+      {
+        "type": "range",
+        "id": "slc_button_lh_m",
+        "min": 14,
+        "max": 101,
+        "step": 1,
+        "unit": "px",
+        "label": "Line height button",
+        "default": 51
+      },
+      {
+        "type": "range",
+        "id": "slc_button_fw_m",
+        "min": 300,
+        "max": 900,
+        "step": 100,
+        "label": "Font weight button",
+        "default": 700
+      },
+      {
+        "type": "range",
+        "id": "slc_cancel_btn_fs_m",
+        "min": 6,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Font size cancel button mobile",
+        "default": 16
+      },
+      {
+        "type": "range",
+        "id": "slc_cancel_btn_lh_m",
+        "min": 6,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Line height cancel button mobile",
+        "default": 22
+      },
+      {
+        "type": "range",
+        "id": "slc_cancel_btn_fw_m",
+        "min": 300,
+        "max": 900,
+        "step": 100,
+        "label": "Font weight cancel button mobile",
+        "default": 400
+      },
+      {
+        "type": "range",
+        "id": "slc_countdown_title_fs_m",
+        "min": 6,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Font size countdown timer title mobile",
+        "default": 16
+      },
+      {
+        "type": "range",
+        "id": "slc_countdown_title_lh_m",
+        "min": 6,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Line height countdown timer title mobile",
+        "default": 22
+      },
+      {
+        "type": "range",
+        "id": "slc_countdown_title_fw_m",
+        "min": 300,
+        "max": 900,
+        "step": 100,
+        "label": "Font weight countdown timer title mobile",
+        "default": 400
+      },
+      {
+        "type": "range",
+        "id": "slc_countdown_time_fs_m",
+        "min": 6,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Font size countdown timer mobile",
+        "default": 22
+      },
+      {
+        "type": "range",
+        "id": "slc_countdown_time_lh_m",
+        "min": 6,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Line height countdown timer mobile",
+        "default": 28
+      },
+      {
+        "type": "range",
+        "id": "slc_countdown_time_fw_m",
+        "min": 300,
+        "max": 900,
+        "step": 100,
+        "label": "Font weight countdown timer mobile",
+        "default": 600
+      },
+      {
+        "type": "header",
+        "content": "Additional CSS"
+      },
+      {
+        "type": "textarea",
+        "id": "slc_custom_css",
+        "label": "Additional CSS Style for lead capture popup",
+        "info": "You can add custom CSS rules for more flexibility"
       }
     ]
   }
