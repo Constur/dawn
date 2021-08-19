@@ -1,12 +1,80 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
+    "smarketly_sections": {
+      "type": "smk_blocks",
+      "blocks": {
+        "f13f35db-5a26-454c-8d3f-a0bee29c19df": {
+          "type": "smk_text_plus_image",
+          "settings": {
+            "page_handle": "test-page-b",
+            "top_offset": "normal",
+            "fullwidth": false,
+            "showimage": true,
+            "video_link": "",
+            "text1": "A great about us block helps builds trust between you and your customers.",
+            "text2": "The more content you provide about you and your business, the more confident people will be when purchasing from your store.",
+            "showbtn": false,
+            "showbtn_aslink": false,
+            "underlinebydefault": true,
+            "linkbtnsizetext": "18",
+            "linkbtnweighttext": "400",
+            "btntext": "SHOP NOW",
+            "btnurl": "",
+            "bg_color": "#191919",
+            "cbtntext": "#ffffff",
+            "bg_color_a": "#ffffff",
+            "cbtntext_a": "#191919",
+            "btn_custom_styles": "",
+            "reverse": false,
+            "reverse_mobile": false,
+            "grid": "6.6",
+            "contentalign": "classnoactions",
+            "textalign": "center",
+            "imagealign": "flex-start",
+            "istretch": false,
+            "textoffset": "60",
+            "fontsizetext1": 32,
+            "lineheighttext1": 51,
+            "fontweighttext1": 700,
+            "bottompaddingtext1": 25,
+            "fontsizetext2": 22,
+            "lineheighttext2": 35,
+            "fontweighttext2": 400,
+            "buttonpadding": 20,
+            "fontsizetext1_mobile": 20,
+            "lineheighttext1_mobile": 28,
+            "fontweighttext1_mobile": 700,
+            "bottompaddingtext1_mobile": 25,
+            "fontsizetext2_mobile": 16,
+            "lineheighttext2_mobile": 24,
+            "fontweighttext2_mobile": 400,
+            "buttonpadding_mobile": 20,
+            "colortext1": "#191919",
+            "colortext2": "#777777",
+            "usebgcolor": false,
+            "bgco": "#ffffff",
+            "bgdepad": "80",
+            "bgdepad_2": "80",
+            "bgmopad": "80",
+            "bgmopad_2": "80",
+            "showbgimage_bg": false,
+            "imagealign_bg": "center",
+            "imagesize_bg": "cover",
+            "usemiheight": false,
+            "backgroundminheight3": "450",
+            "backgroundminheight2": "450",
+            "backgroundminheight1": "200"
+          }
+        }
+      },
+      "block_order": [
+        "f13f35db-5a26-454c-8d3f-a0bee29c19df"
+      ],
       "settings": {
       }
     },
-    "smarketly_sections": {
-      "type": "smk_blocks",
+    "main": {
+      "type": "main-page",
       "settings": {
       }
     }
