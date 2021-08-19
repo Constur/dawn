@@ -1,6 +1,11 @@
 {
   "sections": {
-    "smarketly_sections": {
+    "smarketly_sections_above": {
+      "type": "smk_product_blocks",
+      "settings": {
+      }
+    },
+    "smarketly_sections_below": {
       "type": "smk_product_blocks",
       "settings": {
       }
@@ -79,8 +84,9 @@
     }
   },
   "order": [
+    "smarketly_sections_above",
     "main",
-    "smarketly_sections",
+    "smarketly_sections_below",
     "product-recommendations"
   ]
 }
