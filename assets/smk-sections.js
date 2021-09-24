@@ -9,7 +9,7 @@ if (!window.jQuery) {
 
 ;(function () {
     /*SMK.APP.VERSION=1.28*/
-    window.smarketly ={"id":11,"token":"","active":true,"version":1.28,"serverUrl":"http:\/\/127.0.0.1:8000"}
+    window.smarketly ={"id":11,"token":"","active":true,"version":1.28,"serverUrl":"https:\/\/apps.smarketly.com"}
 
     if (Shopify.designMode && !Shopify.oseid && window.frameElement) {
         parent.smarketly = {
@@ -19,7 +19,7 @@ if (!window.jQuery) {
             'serverUrl': 'https://apps.smarketly.com'
         };
 
-        parent.smarketly ={"id":11,"token":"","active":true,"version":1.28,"serverUrl":"http:\/\/127.0.0.1:8000"}
+        parent.smarketly ={"id":11,"token":"","active":true,"version":1.28,"serverUrl":"https:\/\/apps.smarketly.com"}
 
         var newBlocks = [];
 
